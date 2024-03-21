@@ -1,25 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:roll_dice_app/gradient_container.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: Scaffold(
-        body: Container(
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Colors.deepPurple,
-                Colors.purple
-              ], 
-            ),
-          ),
-          child: const Center(
-            child: Text(
-              "data",
-            ),
-          ),
+        body: GradienContainer(
+          colors: [
+            Colors.deepPurple,
+            Colors.purple,
+          ],
         ),
       ),
-    )
+    ),
   ); 
 }
+
